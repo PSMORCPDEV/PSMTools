@@ -11,9 +11,14 @@ Just download existing builds, or build it yourself:
   4. Download fyne-cross and before that INSTALL DOCKER!
   5. Build to your system
 
+### What build to choose?
+
+Nedohackers Editon: for a special channel "Nedohackers Lite" (я наконец сменил раскладку)
+arm64 for Windows OS: DO NOT USE IT! It was tested on a VM with arm64 Windows 11 installed on it, which didn't work. Only use the amd64 version!
+
+Its recommended to compile version for your system.
+
 ## License
 
 License: CC BY-NC
 See more about the license https://creativecommons.org/licenses/by-nc/4.0/
-
-Wait what
