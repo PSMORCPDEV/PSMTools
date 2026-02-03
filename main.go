@@ -8,30 +8,31 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
+var mainWindow fyne.Window
+
 func main() {
+	autostort()
 	appItself := app.New()
-	window := appItself.NewWindow("PSMTools")
-	window.Resize(fyne.NewSize(400, 190))
-	window.SetFixedSize(true)
+	mainWindow = appItself.NewWindow("PSMTools")
+	mainWindow.Resize(fyne.NewSize(400, 190))
+	mainWindow.SetFixedSize(true)
 
 	appItself.Settings().SetTheme(theme.DarkTheme())
-	logs := widget.NewLabel("PSMT\n\n\n\n\n\nPSMDEV\n©2025-2026")
-	logbutt := widget.NewButtonWithIcon("Log (β)", theme.FileTextIcon(), func() {})
-	//logbutt := widget.NewButtonWithIcon("Логирование (β)", theme.FileTextIcon(), func() {
-	//	logging(logs)
-	//})
+	logs := widget.NewLabel("PSMTools\n\n\n\n\n\n\nPSMDEV\n©2025-2026")
+	logbutt := widget.NewButtonWithIcon(("Log (β)"), theme.FileTextIcon(), func() {})
 	buttons := container.NewVBox(
-		widget.NewButtonWithIcon("Терминал", theme.DesktopIcon(), func() {}),
+		widget.NewButtonWithIcon(("Terminal"), theme.DesktopIcon(), func() {}),
 		logbutt,
-		widget.NewButtonWithIcon("Utilities", theme.MoreHorizontalIcon(), func() {}),
-		widget.NewButtonWithIcon("Regestry", theme.GridIcon(), func() {}),
-		widget.NewButtonWithIcon("Help", theme.QuestionIcon(), func() {}),
+		widget.NewButtonWithIcon(("Utilities"), theme.MoreHorizontalIcon(), func() {}),
+		widget.NewButtonWithIcon(("Registry"), theme.GridIcon(), func() {}),
+		widget.NewButtonWithIcon(("Help"), theme.QuestionIcon(), func() {}),
 	)
-	SettingButton := widget.NewButtonWithIcon("Settings", theme.SettingsIcon(), func() {})
+	SettingButton := widget.NewButtonWithIcon(("Settings (does nothing bruh)"), theme.SettingsIcon(), func() {
+	})
 	content := container.NewBorder(
 		nil, SettingButton, logs, buttons,
 	)
 
-	window.SetContent(content)
-	window.ShowAndRun()
+	mainWindow.SetContent(content)
+	mainWindow.ShowAndRun()
 }

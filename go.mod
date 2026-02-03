@@ -2,7 +2,10 @@ module PSMTools
 
 go 1.24.6
 
-require fyne.io/fyne/v2 v2.7.2
+require (
+	fyne.io/fyne/v2 v2.7.2
+	github.com/emersion/go-autostart v0.0.0-20250403115856-34830d6457d2
+)
 
 require github.com/kr/text v0.2.0 // indirect
 
