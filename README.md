@@ -1,6 +1,6 @@
 # PSMTools
 
-A tool by PSMDEV to bypass viruses and other thingies
+A tool by PSMDEV to b̶y̶p̶a̶s̶s̶ analyse and bypass viruses and other thingies
 
 ## Installing:
 
