@@ -13,7 +13,7 @@ Just download existing builds, or build it yourself:
 
 ### What build to choose?
 
-Nedohackers Editon: for a special channel "Nedohackers Lite" (я наконец сменил раскладку)
+N̶e̶d̶o̶h̶a̶c̶k̶e̶r̶s̶ ̶E̶d̶i̶t̶o̶n̶:̶ ̶f̶o̶r̶ ̶a̶ ̶s̶p̶e̶c̶i̶a̶l̶ ̶c̶h̶a̶n̶n̶e̶l̶ ̶"̶N̶e̶d̶o̶h̶a̶c̶k̶e̶r̶s̶ ̶L̶i̶t̶e̶"̶ ̶(̶я̶ ̶н̶а̶к̶о̶н̶е̶ц̶ ̶с̶м̶е̶н̶и̶л̶ ̶р̶а̶с̶к̶л̶а̶д̶к̶у̶)̶ in future
 arm64 for Windows OS: DO NOT USE IT! It was tested on a VM with arm64 Windows 11 installed on it, which didn't work. Only use the amd64 version!
 
 Its recommended to compile version for your system.
